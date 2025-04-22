@@ -25,3 +25,9 @@ jobs:
           projectBaseDir: app-2
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN_APP_2 }}
+      - name: SonarQube Scan App 3
+        uses: SonarSource/sonarqube-scan-action@v5
+        with:
+          projectBaseDir: app-3
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN_APP_3 }}
